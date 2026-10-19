@@ -1,11 +1,13 @@
 [workspace]
 resolver = "2"
 members = [
+    "contracts/accreditation-registry",
     "contracts/alert-subscription",
     "contracts/auto-invest",
     "contracts/batch-settlement",
     "contracts/bulk-listing",
     "contracts/categorisation-registry",
+    "contracts/document-cid-registry",
     "contracts/fee-discount",
     "contracts/fee-treasury",
     "contracts/grace-interest",
@@ -15,6 +17,7 @@ members = [
     "contracts/investor-scoring",
     "contracts/invoice-co-investment",
     "contracts/invoice-escrow",
+    "contracts/invoice-metadata-registry",
     "contracts/invoice-pool",
     "contracts/invoice-token",
     "contracts/loyalty-tier",
@@ -23,6 +26,7 @@ members = [
     "contracts/order-book",
     "contracts/partial-settlement",
     "contracts/payment-distributor",
+    "contracts/platform-pause",
     "contracts/pool-rebalance",
     "contracts/price-cap",
     "contracts/referral-tier-upgrade",
