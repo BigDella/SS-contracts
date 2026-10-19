@@ -129,4 +129,21 @@ pub enum Error {
     SameAdminApproval = 59,
     /// No settlement proposal exists for the invoice.
     SettlementNotProposed = 60,
+    /// Funding thresholds are invalid (must satisfy
+    /// `0 < min <= funding_target <= max`).
+    InvalidFundingThreshold = 61,
+    /// Total raised is below the invoice's minimum funding threshold, so the
+    /// proceeds cannot be released to the issuer yet.
+    FundingThresholdNotReached = 62,
+    /// Investment would push the total raised above the maximum funding
+    /// threshold (invoice funding capacity is exhausted).
+    MaxFundingThresholdExceeded = 63,
+    /// Wallet's secondary-market buy limit for the current window was exceeded.
+    BuyLimitExceeded = 64,
+    /// The currency is not in the admin-configured supported currency list.
+    UnsupportedCurrency = 65,
+    /// The FX oracle rate is older than the allowed staleness window.
+    StalePrice = 66,
+    /// No FX oracle contract has been configured.
+    FxOracleNotSet = 67,
 }
